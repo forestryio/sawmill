@@ -2,7 +2,7 @@
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ "" | absLangURL }}">
             {{- if .Site.Params.logo -}}
-            <img src="{{ .Site.Params.logo }}" alt=" {{ .Site.Title }}"/>
+            <img src="{{ absURL .Site.Params.logo }}" alt=" {{ .Site.Title }}"/>
             {{ else }}
             <span class="site-title is-size-4">{{ .Site.Title }}</span>
             {{- end -}}
