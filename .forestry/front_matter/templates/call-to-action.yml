@@ -1,0 +1,21 @@
+---
+hide_body: true
+is_partial: true
+fields:
+- type: text
+  name: heading
+  label: Heading
+  description: Large text above button
+- type: text
+  name: subheading
+  label: Subheading
+  description: Smaller text below heading
+- type: textarea
+  name: content
+  label: Content
+  description: Regular text above button
+- type: include
+  name: button
+  label: Button
+  description: ''
+  template: button

@@ -1,0 +1,50 @@
+---
+hide_body: true
+is_partial: true
+fields:
+- type: text
+  name: heading
+  label: Heading
+- type: text
+  name: subheading
+  label: Subheading
+- type: textarea
+  name: content
+  label: Content
+- type: select
+  name: background_style
+  config:
+    source:
+      type: simple
+    options:
+    - Brand Color
+    - Light
+    - Dark
+    required: false
+  label: Background Style
+  default: Brand Color
+- type: file
+  name: image
+  label: Featured Image
+- type: boolean
+  name: image_shadow
+  label: Add Shadow to Image
+  description: Adds a drop shadow to the image
+- type: select
+  name: image_position
+  config:
+    source:
+      type: simple
+    required: false
+    options:
+    - Left
+    - Right
+    - Bottom
+    - Top
+  label: Image Position
+  description: Positioning of image relative to content
+  default: Left
+- type: include
+  template: button
+  label: Call To Action
+  name: call_to_action

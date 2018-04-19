@@ -1,0 +1,18 @@
+<section class="section cta">
+    <div class="container">
+        {{- with .Params.heading -}}
+        <h2 class="title">{{ markdownify . }}</h2>
+        {{- end -}}
+        {{ with .Params.subheading}}
+        <h3 class="subtitle">{{ markdownify . }}</h3>
+        {{ end }}
+        {{- with .Params.content -}}
+        <div class="content">
+            {{ markdownify . }}
+        </div>
+        {{- end -}}
+        <div>
+            <a class="button is-primary is-large" href="{{ .Params.button_url }}">{{ .Params.button_text }}</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+---
+pages:
+- _index.md
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - body-copy
+  - call-to-action
+  - media-feature
+  - hero-section

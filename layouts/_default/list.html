@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="section">
+    <div class="container">
+        {{ range .Paginator.Pages }}
+            <article class="post-excerpt">
+                <a href="{{ .Permalink }}">
+                    <h2 class="title">{{ .Title }}</h2>
+                    {{ if .Params.subtitle }}
+                    <h3 class="subtitle">
+                        {{ .Params.subtitle }}
+                    </h3>
+                    {{ end }}
+                </a>
+
+                <div class="post-entry">
+                    {{ if .Truncated }}
+                    {{ .Summary }}
+                    <a href="{{ .Permalink }}" class="post-read-more">[{{ i18n "readMore" }}]</a>
+                    {{ else }}
+                    {{ .Content }}
+                    {{ end }}
+                </div>
+
+                {{ if .Params.tags }}
+                    <div class="tags">
+                    {{ range .Params.tags }}
+                        <a class="tag is-primary" href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>
+                    {{ end }}
+                    </div>
+                {{ end }}
+
+            </article>
+        {{ end }}
+        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            {{ if .Paginator.HasPrev }}
+            <a class="pagination-previous" href="{{ .URL }}page/{{ .Paginator.Prev.PageNumber }}/">&larr; {{ i18n "newerPosts" }}</a>
+            {{ end }}
+            {{ if .Paginator.HasNext }}
+            <a class="pagination-next" href="{{ .URL }}page/{{ .Paginator.Next.PageNumber }}/">{{ i18n "olderPosts" }} &rarr;</a>
+            {{ end }}
+          </ul>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

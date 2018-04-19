@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+    {{ partial "head" . }}
+    <body>
+        {{- if ne .Page.Kind "404" -}}
+            {{ partial "nav" . }}
+        {{- end -}}
+        <main id="primary-content">
+            {{block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer" . }}
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    {{- with .Title | default .Site.Title -}}
+    <title>{{ . }}</title>
+    <meta property="og:title" content="{{ . }}" />
+    <meta name="twitter:title" content="{{ . | truncate 70 }}" />
+    {{- end -}}
+    {{- with .Description | default .Params.subtitle | default .Summary -}}
+    <meta name="description" content="{{ . }}">
+    <meta property="og:description" content="{{ . }}">
+    <meta name="twitter:description" content="{{ . | truncate 200 }}">
+    {{- end -}}
+    <meta name="author" content="{{ .Site.Author.name }}"/>
+    <link href='{{ "" | absLangURL }}/favicon.ico' rel='icon' type='image/x-icon'/>
+
+    <meta property="og:url" content="{{ .URL | absLangURL }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <link rel="canonical" href="{{ .URL | absLangURL }}" />
+    <link rel="stylesheet" href="{{ "" | absLangURL }}/css/main.css" />
+    {{- with .Site.Params.BrandColor -}}
+        {{- partial "brand_css.html" . -}}
+    {{- end -}}
+    {{ partial "head_custom.html" . }}
+</head> 

@@ -1,0 +1,5 @@
+{{- with . -}}
+    {{- if eq "Brand Color" . }}is-primary has-background-primary has-text-light{{- end -}}
+    {{- if eq "Light" . }}is-light has-background-light has-text-dark{{- end -}}
+    {{- if eq "Dark" . }}is-dark has-background-dark has-text-light{{- end -}}
+{{- end -}}

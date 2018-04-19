@@ -1,0 +1,40 @@
+---
+hide_body: true
+is_partial: true
+fields:
+- type: text
+  name: heading
+  label: Heading
+- type: text
+  name: subheading
+  label: Subheading
+- type: select
+  name: background_style
+  config:
+    source:
+      type: simple
+    required: false
+    options:
+    - Brand Color
+    - Light
+    - Dark
+  label: Background Style
+  default: Brand Color
+- type: file
+  name: background_image
+  label: Background Image
+  description: Use an image background instead of a color
+- type: include
+  template: button
+  label: Call to Action
+  name: call_to_
+- type: select
+  name: size
+  config:
+    source:
+      type: simple
+    options:
+    - Big
+    - Small
+  label: Size
+  default: Big

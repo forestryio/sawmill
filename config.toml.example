@@ -1,0 +1,14 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+theme = "sawmill"
+title = "Sawmill"
+
+[Author]
+    name = "DJ Walker"
+[Params]
+    logo = "logo.svg"
+[Params.BrandColor]
+    normal = "#343477"
+    light = "#565695"
+    dark = "#1A1A59"
+    shadow = "#09093B"
