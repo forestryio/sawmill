@@ -6,19 +6,9 @@
     <description>Recent content in Sawmill: A Modular Layout Builder for Hugo and Forestry.io on Sawmill</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Apr 2018 17:58:47 +0000</lastBuildDate>
     
 	<atom:link href="https://dwalkr.github.io/sawmill/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Components</title>
-      <link>https://dwalkr.github.io/sawmill/components/</link>
-      <pubDate>Thu, 19 Apr 2018 17:58:47 +0000</pubDate>
-      
-      <guid>https://dwalkr.github.io/sawmill/components/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
