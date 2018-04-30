@@ -34,3 +34,7 @@ If you have Sawmill installed as a submodule, you can update it with the followi
 ```bash
 git submodule update --remote --merge
 ```
+
+### License
+
+This theme is released under the MIT license. For more information read the [License](https://github.com/dwalkr/sawmill/blob/master/LICENSE.md).
