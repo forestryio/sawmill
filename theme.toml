@@ -8,7 +8,7 @@ description = "A Modular Layout Builder for Hugo and Forestry.io"
 homepage = "https://dwalkr.github.io/sawmill/"
 tags = []
 features = []
-min_version = "0.37.1"
+min_version = "0.31.1"
 
 [author]
   name = "DJ Walker"
