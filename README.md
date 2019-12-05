@@ -9,7 +9,7 @@
 ### 1. Add this theme as a submodule:
 
 ```bash
-git submodule add https://github.com/dwalkr/sawmill.git themes/sawmill
+git submodule add https://github.com/forestryio/sawmill.git themes/sawmill
 ```
 
 
@@ -35,7 +35,7 @@ git submodule update --remote --merge
 
 ### License
 
-This theme is released under the MIT license. For more information read the [License](https://github.com/dwalkr/sawmill/blob/master/LICENSE.md).
+This theme is released under the MIT license. For more information read the [License](https://github.com/forestryio/sawmill/blob/master/LICENSE.md).
 
 ## Theme Development
 
